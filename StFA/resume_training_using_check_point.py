@@ -16,7 +16,7 @@ from tensorflow.keras.optimizers import Adam
 from config import*
 import os
 import datetime
-from DyFA_Model import*
+from StFA_Model import*
 from tfrecords_utilities import decode_ct
 import numpy as np
 import random
@@ -67,7 +67,7 @@ def Training():
     if (NUM_OF_GPU==1):
         if RESUME_TRAINING==1:
             inputs = tf.keras.Input(shape=INPUT_PATCH_SIZE, name='CT')
-            Model_3D=DyFAModel_withDenseVnet(SEGMENTATION_MODEL_PATH,INPUT_PATCH_SIZE,NUMBER_OF_CLASSES,SEGMENTATION_NUM_OF_CLASSES)
+            Model_3D=StFAModel_withDenseVnet(SEGMENTATION_MODEL_PATH,INPUT_PATCH_SIZE,NUMBER_OF_CLASSES,SEGMENTATION_NUM_OF_CLASSES)
             Model_3D.load_weights(RESUME_TRAIING_MODEL)
             initial_epoch_of_training=TRAINING_INITIAL_EPOCH
             print('Resume-Training From-Epoch{}-Loading-Model-from_{}'.format(initial_epoch_of_training,RESUME_TRAIING_MODEL))
@@ -76,7 +76,7 @@ def Training():
         else:
             initial_epoch_of_training=0
             inputs = tf.keras.Input(shape=INPUT_PATCH_SIZE, name='CT')
-            Model_3D=DyFAModel_withDenseVnet(SEGMENTATION_MODEL_PATH,INPUT_PATCH_SIZE,NUMBER_OF_CLASSES,SEGMENTATION_NUM_OF_CLASSES)
+            Model_3D=StFAModel_withDenseVnet(SEGMENTATION_MODEL_PATH,INPUT_PATCH_SIZE,NUMBER_OF_CLASSES,SEGMENTATION_NUM_OF_CLASSES)
             Model_3D.compile(optimizer=OPTIMIZER, loss=[TRAIN_CLASSIFY_LOSS], metrics=[TRAIN_CLASSIFY_METRICS,tf.keras.metrics.Precision(),tf.keras.metrics.Recall()])
             Model_3D.summary()
         Model_3D.fit(traing_data,
@@ -93,7 +93,7 @@ def Training():
         with mirrored_strategy.scope():
                 if RESUME_TRAINING==1:
                     inputs = tf.keras.Input(shape=INPUT_PATCH_SIZE, name='CT')
-                    Model_3D=DyFAModel_withDenseVnet(SEGMENTATION_MODEL_PATH,INPUT_PATCH_SIZE,NUMBER_OF_CLASSES,SEGMENTATION_NUM_OF_CLASSES)
+                    Model_3D=StFAModel_withDenseVnet(SEGMENTATION_MODEL_PATH,INPUT_PATCH_SIZE,NUMBER_OF_CLASSES,SEGMENTATION_NUM_OF_CLASSES)
                     Model_3D.load_weights(RESUME_TRAIING_MODEL)
                     initial_epoch_of_training=TRAINING_INITIAL_EPOCH
                     print('Resume-Training From-Epoch{}-Loading-Model-from_{}'.format(initial_epoch_of_training,RESUME_TRAIING_MODEL))
@@ -102,7 +102,7 @@ def Training():
                 else:
                     initial_epoch_of_training=0
                     inputs = tf.keras.Input(shape=INPUT_PATCH_SIZE, name='CT')
-                    Model_3D=DyFAModel_withDenseVnet(SEGMENTATION_MODEL_PATH,INPUT_PATCH_SIZE,NUMBER_OF_CLASSES,SEGMENTATION_NUM_OF_CLASSES)
+                    Model_3D=StFAModel_withDenseVnet(SEGMENTATION_MODEL_PATH,INPUT_PATCH_SIZE,NUMBER_OF_CLASSES,SEGMENTATION_NUM_OF_CLASSES)
                     Model_3D.compile(optimizer=OPTIMIZER, loss=[TRAIN_CLASSIFY_LOSS], metrics=[TRAIN_CLASSIFY_METRICS,tf.keras.metrics.Precision(),tf.keras.metrics.Recall()])
                     Model_3D.summary()
                 Model_3D.fit(traing_data,

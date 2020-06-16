@@ -163,11 +163,11 @@ def DyFAModel_WithUnet(Unet_Model_Path,Input_shape,num_classes_clf,num_classes_f
     return Final_DyFAmodel
 
 
-def DyFAModel_withDenseVnet(DenseVnet3D_Model_Path,Input_shape,num_classes_clf,num_classes_for_seg):
+def StFAModel_withDenseVnet(DenseVnet3D_Model_Path,Input_shape,num_classes_clf,num_classes_for_seg):
 
     ###----Loading Segmentation Module---###
     inputs = tf.keras.Input(shape=Input_shape, name='CT')
-    model_3DDenseVnet=DenseVnet3D(inputs,nb_classes=SEG_NUMBER_OF_CLASSES,encoder_nb_layers=NUM_DENSEBLOCK_EACH_RESOLUTION,growth_rate=NUM_OF_FILTER_EACH_RESOLUTION,dilation_list=DILATION_RATE,dropout_rate=DROPOUT_RATE)    
+    model_3DDenseVnet=DenseVnet3D(inputs,nb_classes=SEG_NUMBER_OF_CLASSES,encoder_nb_layers=NUM_DENSEBLOCK_EACH_RESOLUTION,growth_rate=NUM_OF_FILTER_EACH_RESOLUTION,dilation_list=DILATION_RATE,dropout_rate=DROPOUT_RATE)
     #-| Loading the Best Segmentation Weight
     model_3DDenseVnet.load_weights(DenseVnet3D_Model_Path)
     model_3DDenseVnet.summary()
