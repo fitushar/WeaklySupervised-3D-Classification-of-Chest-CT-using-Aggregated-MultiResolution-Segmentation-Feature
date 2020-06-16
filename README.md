@@ -8,7 +8,7 @@ Can be seen here: https://github.com/anindox8/Deep-Segmentation-Features-for-Wea
 
 If our work help in your task or project please site the work at  (https://doi.org/10.1117/12.2550857). This work is been presented at  SPIE Medical Imaging, 2020, Houston, Texas, United States. Presentation can be seen here : https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11314/2550857/Weakly-supervised-3D-classification-of-chest-CT-using-aggregated-multi/10.1117/12.2550857.full?SSO=1
 
-![model Architecture for multi-label approach version-2 implementation]()
+![model Architecture for multi-label approach version-2 implementation](https://github.com/fitushar/Weakly-Supervised-3D-Classification-of-Chest-CT-using-Aggregated-Multi-Resolution-Deep-Segmentation-/blob/master/figure/Model_Architecture.png)
 
 # Citation
 ```
