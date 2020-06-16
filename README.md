@@ -22,7 +22,14 @@ https://doi.org/10.1117/12.2550857
 
 ## Directories and Files
 *   i) DyFA -|--> Dynamic Feature aggragation Model and training script.
-             |* a) 
+             ```
+             a) config.py |-- Configuration file to train the DyFA model
+             b) DenseVnet3D.py |-- 3D implementation of the DenseVnet (Segmentation Module)
+             c) DyFA_Model.py  |-- DyFA model (Segmentation+Classification Module)
+             d) loss_funnction_And_matrics |-- Loss Function.
+             e) resume_training_using_check_point |-- Training Script
+             f) tfrecords_utilities |-- Tfrecords decoding function
+             ```
        
 *  ii) SyFa -|--> Static Feature aggragation Model and training script.
 * iii) Figure -|--> Figure used in this Repo
