@@ -10,7 +10,10 @@ If our work help in your task or project please site the work at  (https://doi.o
 
 # Citation
 ```
-Anindo Saha*, Fakrul I. Tushar*, Khrystyna Faryna, Vincent M. D'Anniballe, Rui Hou, Maciej A. Mazurowski, Geoffrey D. Rubin M.D., and Joseph Y. Lo "Weakly supervised 3D classification of chest CT using aggregated multi-resolution deep segmentation features", Proc. SPIE 11314, Medical Imaging 2020: Computer-Aided Diagnosis, 1131408 (16 March 2020); https://doi.org/10.1117/12.2550857
+Anindo Saha*, Fakrul I. Tushar*, Khrystyna Faryna, Vincent M. D'Anniballe, Rui Hou, 
+Maciej A. Mazurowski, Geoffrey D. Rubin M.D., and Joseph Y. Lo 
+"Weakly supervised 3D classification of chest CT using aggregated multi-resolution deep segmentation features", 
+Proc. SPIE 11314, Medical Imaging 2020: Computer-Aided Diagnosis, 1131408 (16 March 2020); https://doi.org/10.1117/12.2550857
 (*Authors with equal contribution to this work.)
 
 ```
