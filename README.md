@@ -55,7 +55,7 @@ NUM_OF_GPU=2
 #["gpu:1","gpu:2","gpu:3"]
 DISTRIIBUTED_STRATEGY_GPUS=["gpu:0","gpu:1"]
 ###-----SEGMENATTION----###
-SEGMENTATION_MODEL_PATH='/image_data/Scripts/April_Model/DyFA_61FC1X1_April17_2020/LungSEG_DenseVnet_2.60_4998.h5'
+SEGMENTATION_MODEL_PATH='/Path/of/the/Segmentation Module/weight/Model.h5'.h5'
 SEGMENTATION_NUM_OF_CLASSES=31
 #####-----Configure DenseVnet3D---##########
 SEG_NUMBER_OF_CLASSES=31
@@ -65,8 +65,12 @@ NUM_OF_FILTER_EACH_RESOLUTION=(12,24,24)
 DILATION_RATE=(5, 10, 10)
 DROPOUT_RATE=0.25
 ###----Resume-Training
+'''
+if want to resume training from the weights Set
+RESUME_TRAINING=1
+'''
 RESUME_TRAINING=0
-RESUME_TRAIING_MODEL='/image_data/Scripts/April_Model/DyFA_61FC1X1_April17_2020/Model_DyFA_61FC1X1_April17_2020/'
+RESUME_TRAIING_MODEL='/Path/of/the/model/weight/Model.h5'
 TRAINING_INITIAL_EPOCH=0
 ##Network Configuration
 NUMBER_OF_CLASSES=5
@@ -90,14 +94,13 @@ NUMBER_OF_PARALLEL_CALL=6
 PARSHING=3*BATCH_SIZE
 #--Callbacks-----
 ModelCheckpoint_MOTITOR='val_loss'
-TRAINING_SAVE_MODEL_PATH='/image_data/Scripts/April_Model/DyFA_61FC1X1_April17_2020/Model_DyFA_61FC1X1_April17_2020/'
+TRAINING_SAVE_MODEL_PATH='/Path/to/save/model/weight/Model.h5'
 TRAINING_CSV='DyFA_61FC1X1_April17_2020.csv'
 LOG_NAME="Log_DyFA_61FC1X1_April17_2020"
 MODEL_SAVING_NAME="DyFAModel61FC1X1_{val_loss:.2f}_{epoch}.h5"
-
 ####
-TRAINING_TF_RECORDS='/image_data/nobackup/Lung_CenterPatch_2mm_March27_2020/tf/Train_tfrecords/'
-VALIDATION_TF_RECORDS='/image_data/nobackup/Lung_CenterPatch_2mm_March27_2020/tf/Val_tfrecords/'
+TRAINING_TF_RECORDS='/Training/tfrecords/path/'
+VALIDATION_TF_RECORDS='/Val/tfrecords/path/'
 ```
 
 
