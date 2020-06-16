@@ -34,7 +34,7 @@ https://doi.org/10.1117/12.2550857
       ```ruby
              a) config.py |-- Configuration file to train the DyFA model
              b) DenseVnet3D.py |-- 3D implementation of the DenseVnet (Segmentation Module)
-             c) DyFA_Model.py  |-- StFA model (Segmentation+Classification Module)
+             c) StFA_Model.py  |-- StFA model (Segmentation+Classification Module)
              d) loss_funnction_And_matrics |-- Loss Function.
              e) resume_training_using_check_point |-- Training Script
              f) tfrecords_utilities |-- Tfrecords decoding function    
