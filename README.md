@@ -103,4 +103,10 @@ TRAINING_TF_RECORDS='/Training/tfrecords/path/'
 VALIDATION_TF_RECORDS='/Val/tfrecords/path/'
 ```
 
+## Multi-label Data Statistics 
+![Multi-label Data Statistics](https://github.com/fitushar/Weakly-Supervised-3D-Classification-of-Chest-CT-using-Aggregated-Multi-Resolution-Deep-Segmentation-/blob/master/figure/dataset.png)
+
+## Results
+![Classification Results](https://github.com/fitushar/Weakly-Supervised-3D-Classification-of-Chest-CT-using-Aggregated-Multi-Resolution-Deep-Segmentation-/blob/master/figure/results.png)
+
 
