@@ -45,7 +45,9 @@ https://doi.org/10.1117/12.2550857
 
 ## How to run
 
-To run the model all is to need to configure the `config.py` based on your requiremnet.
+To run the model all is to need to configure the `config.py` based on your requiremnet. and use the command 
+`python resume_training_using_check_point.py`
+
 ```ruby
 import tensorflow as tf
 from loss_funnction_And_matrics import*
