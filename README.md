@@ -22,6 +22,8 @@ https://doi.org/10.1117/12.2550857
 
 ## Directories and Files
 *   i) DyFA -|--> Dynamic Feature aggragation Model and training script.
+             |* a) 
+       
 *  ii) SyFa -|--> Static Feature aggragation Model and training script.
 * iii) Figure -|--> Figure used in this Repo
 *  iv) SPIE_presentation -|--> SPIE presentation
