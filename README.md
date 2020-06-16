@@ -10,18 +10,21 @@ If our work help in your task or project please site the work at  (https://doi.o
 
 ![model Architecture for multi-label approach version-2 implementation](https://github.com/fitushar/Weakly-Supervised-3D-Classification-of-Chest-CT-using-Aggregated-Multi-Resolution-Deep-Segmentation-/blob/master/figure/Model_Architecture.png)
 
-# Citation
+## Citation
 ```
 Anindo Saha*, Fakrul I. Tushar*, Khrystyna Faryna, Vincent M. D'Anniballe, Rui Hou, 
 Maciej A. Mazurowski, Geoffrey D. Rubin M.D., and Joseph Y. Lo 
 "Weakly supervised 3D classification of chest CT using aggregated multi-resolution deep segmentation features", 
-Proc. SPIE 11314, Medical Imaging 2020: Computer-Aided Diagnosis, 1131408 (16 March 2020); https://doi.org/10.1117/12.2550857
+Proc. SPIE 11314, Medical Imaging 2020: Computer-Aided Diagnosis,1131408 (16 March 2020); 
+https://doi.org/10.1117/12.2550857
 (*Authors with equal contribution to this work.)
 ```
 
-# Directories
-
-* DyFA- Dynamic Feature aggragation model
+## Directories and Files
+*   i) DyFA -|--> Dynamic Feature aggragation Model and training script.
+*  ii) SyFa -|--> Static Feature aggragation Model and training script.
+* iii) Figure -|--> Figure used in this Repo
+*  iv) SPIE_presentation -|--> SPIE presentation
 
 
 
